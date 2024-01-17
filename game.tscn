@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://yqvy7yrg2vvs"]
+
+[ext_resource type="PackedScene" uid="uid://3xuwgca0cbp5" path="res://game_world.tscn" id="1_tqy3u"]
+[ext_resource type="PackedScene" uid="uid://202lm61u5key" path="res://hp_bar.tscn" id="2_qc07i"]
+[ext_resource type="PackedScene" uid="uid://bm4tckyihhqxd" path="res://inventory_grid.tscn" id="3_sf6qg"]
+
+[node name="Game" type="Node"]
+
+[node name="GameWorld" parent="." instance=ExtResource("1_tqy3u")]
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="HPBar" parent="GUI" instance=ExtResource("2_qc07i")]
+
+[node name="CenterContainer" type="CenterContainer" parent="GUI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventoryGrid" parent="GUI/CenterContainer" instance=ExtResource("3_sf6qg")]
+visible = false
+layout_mode = 2

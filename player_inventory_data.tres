@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="InventoryDataResource" load_steps=6 format=3 uid="uid://doeettg3ssy81"]
+
+[ext_resource type="Script" path="res://inventory_data_resource.gd" id="1_ai4dh"]
+[ext_resource type="Texture2D" uid="uid://ccrtyu4u85uux" path="res://icon.svg" id="1_mxedo"]
+[ext_resource type="Script" path="res://item_resource.gd" id="2_y3vp6"]
+
+[sub_resource type="Resource" id="Resource_peo3b"]
+script = ExtResource("2_y3vp6")
+item_name = "test1"
+item_icon = ExtResource("1_mxedo")
+item_desc = "test1"
+
+[sub_resource type="Resource" id="Resource_ce407"]
+script = ExtResource("2_y3vp6")
+item_name = "test2"
+item_icon = ExtResource("1_mxedo")
+item_desc = "test2"
+
+[resource]
+script = ExtResource("1_ai4dh")
+item_capacity = 4
+items = Array[ExtResource("2_y3vp6")]([SubResource("Resource_peo3b"), null, SubResource("Resource_ce407"), null])

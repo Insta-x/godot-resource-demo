@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://202lm61u5key"]
+
+[ext_resource type="Script" path="res://hp_bar.gd" id="1_utkkm"]
+[ext_resource type="Resource" uid="uid://cn1dbdgu0ipru" path="res://player_health.tres" id="2_jns7u"]
+
+[node name="HPBar" type="ProgressBar"]
+offset_right = 185.0
+offset_bottom = 27.0
+value = 100.0
+script = ExtResource("1_utkkm")
+health = ExtResource("2_jns7u")
