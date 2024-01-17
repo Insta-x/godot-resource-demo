@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://yqvy7yrg2vvs"]
 
 [ext_resource type="PackedScene" uid="uid://3xuwgca0cbp5" path="res://game_world.tscn" id="1_tqy3u"]
-[ext_resource type="PackedScene" uid="uid://202lm61u5key" path="res://hp_bar.tscn" id="2_qc07i"]
-[ext_resource type="PackedScene" uid="uid://bm4tckyihhqxd" path="res://inventory_grid.tscn" id="3_sf6qg"]
+[ext_resource type="PackedScene" uid="uid://202lm61u5key" path="res://gui/hp_bar.tscn" id="2_qc07i"]
+[ext_resource type="PackedScene" uid="uid://bm4tckyihhqxd" path="res://gui/inventory_grid.tscn" id="3_sf6qg"]
 
 [node name="Game" type="Node"]
 
